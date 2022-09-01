@@ -1,0 +1,7 @@
+{
+  "name": "Senga",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

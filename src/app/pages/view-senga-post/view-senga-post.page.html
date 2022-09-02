@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-label>Post</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-senga-post-detail [post]="post"></app-senga-post-detail>
+  <app-senga-post-comment *ngFor="let comment of comments" [comment]="comment"></app-senga-post-comment>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar >
+    <ion-textarea wrap="hard" autoGrow="true" maxlength="144" placeholder="Post your comment here"></ion-textarea>
+    <ion-icon color="primary" class="ion-padding" name="send-outline" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-footer>

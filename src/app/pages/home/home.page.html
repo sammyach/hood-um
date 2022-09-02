@@ -1,0 +1,29 @@
+<ion-header #header>
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+    <ion-title>
+      Senga
+      <!-- <ion-icon name="logo-twitter" color="primary" size="large"></ion-icon> -->
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <app-senga-post *ngFor="let post of posts" [post]="post"></app-senga-post>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="pencil"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

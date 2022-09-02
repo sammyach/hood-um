@@ -1,0 +1,46 @@
+<!-- <a [routerLink]="['/view-senga-post', post.id]"> -->
+  <ion-grid class="wrapper">
+    <app-senga-post-header [username]="comment.username" [authorImg]="comment.authorImg" [time]="'7h'" ></app-senga-post-header>
+
+    <ion-row class="content">
+      <ion-col size="12">
+        <div [innerHtml]="comment.content"></div>
+        <!-- <img class="preview-img" [src]="post.attachment" *ngIf="post.attachment"> -->
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="ion-justify-content-between">
+      <!-- <ion-col size="2">
+        <ion-button fill="clear" color="medium" size="small">
+          <ion-icon name="chatbox-ellipses-outline" slot="start"></ion-icon>
+          <!-- <ion-icon name="chatbubble-outline" slot="start"></ion-icon> -->
+          <!-- {{ post.responses }}
+        </ion-button>
+      </ion-col> -->
+      <!-- <ion-col>
+        <ion-button fill="clear"  size="small">
+          <ion-icon name="repeat-outline" slot="start"></ion-icon>
+          {{ post.reposts }}
+        </ion-button>
+      </ion-col> -->
+      <div>
+        <ion-button fill="clear" color="medium" size="small">
+          <ion-icon name="thumbs-down-outline" slot="start"></ion-icon>
+          <!-- <ion-icon name="heart-outline" slot="start"></ion-icon> -->
+          {{ comment.likes }} K
+          <ion-icon name="thumbs-up-outline" slot="end"></ion-icon>
+
+        </ion-button>
+      </div>
+      <div>
+        <ion-button fill="clear" color="medium" size="small">
+          <ion-icon name="share-social-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-row>
+  </ion-grid>
+
+<!-- </a> -->
+
+

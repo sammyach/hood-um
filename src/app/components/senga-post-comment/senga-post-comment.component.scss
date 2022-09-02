@@ -1,0 +1,44 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  border-bottom: 1px solid var(--ion-color-light);
+  padding: 1rem;
+}
+
+.profile-pic{
+  width: 32px;
+  height: 32px;
+}
+.name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.handle {
+  // padding-left: 4px;
+  color: var(--ion-color-medium);
+}
+
+.handle ion-icon{
+  font-size: 1.2rem;
+}
+.post-info {
+    font-size: 0.85em;
+    padding-left: 10px;
+}
+.highlight {
+  color: var(--ion-color-primary);
+}
+
+.preview-img {
+  border: 1px solid var(--ion-color-light);
+  border-radius: 10px;
+}
+
+.content{
+  margin-top: .5rem;
+  font-size: .9em;
+  font-weight: 600;
+}

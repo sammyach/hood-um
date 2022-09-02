@@ -1,0 +1,25 @@
+<ion-row>
+  <ion-col size="1">
+    <ion-avatar class="profile-pic">
+      <ion-img [src]="authorImg"></ion-img>
+    </ion-avatar>
+  </ion-col>
+  <ion-col size="11">
+    <ion-row class="post-info">
+      <ion-col size="12">
+        <span class="name">{{ username }} <span class="time">• {{ time }} ago</span> </span>
+        <!-- <div class="handle">@{{ post.handle }}</div> -->
+        <div class="handle">
+          <!-- <ion-icon slot="start" name="time-outline"></ion-icon> -->
+          <!-- <ion-label> {{ +post.date *1000 | date: 'shortTime' }}</ion-label> -->
+          <ion-label>Friend</ion-label>
+          <!-- <ion-label> • {{ +post.date *1000 | date: 'medium' }}</ion-label> -->
+          <!-- <ion-item >
+
+          </ion-item> -->
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row>

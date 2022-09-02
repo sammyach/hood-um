@@ -5,7 +5,12 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'view-senga-post/:id',
+    loadChildren: () => import('./pages/view-senga-post/view-senga-post.module').then( m => m.ViewSengaPostPageModule)
   }
+
 ];
 @NgModule({
   imports: [
